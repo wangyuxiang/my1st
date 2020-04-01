@@ -1,0 +1,37 @@
+http://localhost:9456/GeoAdapter/Map/WMS/44451a409e2f61a5499080a76f9f8634?SERVICE=WMS&REQUEST=GetMap&VERSION=1.1.1&LAYERS=cglc30_2010_0&STYLES=forest&FORMAT=image%2Fpng&TRANSPARENT=true&HEIGHT=256&WIDTH=256&SRS=EPSG%3A3857&BBOX=11797270.578531113,3130860.67856082,12210356.646387193,3443946.746416902
+
+http://218.244.250.80:8080/erdas-apollo/coverage/CGLC?service=WMS&request=GetMap&version=1.1.1&format=image/png&layers=cglc30_2010_0&styles=forest&width=256&height=256&bbox=11797270.5785311,3130860.67856082,12210356.6463872,3443946.7464169&srs=EPSG:3857&transparent=True&bgcolor=ffffff
+
+
+----ArcGIS Dynamic
+http://localhost:9456/GeoAdapter/Map/TC206304350000_1630_00/21232f297a57a5a743894a0e4a801fc3/export?dpi=96&transparent=true&format=png8&layers=show%3A0%2C3&bbox=116.07449125976562%2C24.47748861386161%2C119.82107329101562%2C26.31769857479911&bboxSR=4490&imageSR=4490&size=1000%2C670&f=image
+
+
+
+http://192.168.0.251/GeoAdapter/Map/Map5/44451a409e2f61a5499080a76f9f8634/tile/9/183/847
+
+
+http://service.fjmap.net/img_fj/wmts?SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=img_fj&STYLE=default&FORMAT=image/png&TILEMATRIXSET=Matrix_1&TILEMATRIX=10&TILEROW=182&TILECOL=847
+
+http://192.168.0.251:6080/arcgis/services/CGCS2000JWD/TC206304350000_1630_00/MapServer/WMSServer
+
+
+http://192.168.0.251/GeoAdapter/Map/TC206304350000_1630_00/21232f297a57a5a743894a0e4a801fc3/identify?f=json&tolerance=0&returnGeometry=true&returnFieldName=false&returnUnformattedValues=false&imageDisplay=1054%2C670%2C96&geometry=%7B%22x%22%3A117.72082444073214%2C%22y%22%3A25.358458862437338%7D&geometryType=esriGeometryPoint&sr=4490&mapExtent=117.70134087444796%2C25.344597206248373%2C117.74657364727511%2C25.37335048688802&layers=visible&callback=dojo_request_script_callbacks.dojo_request_script16
+
+
+--行政区划WMTS测试
+http://localhost:9456/GeoAdapter/Map/CGCS2000JWD_TE100601350000_2017?tokens=44451a409e2f61a5499080a76f9f8634&SERVICE=WMTS&VERSION=1.0.0&REQUEST=GetTile&LAYER=&STYLE=default&FORMAT=image/png&TILEMATRIXSET=default&TILEMATRIX=9&TILEROW=182&TILECOL=847
+
+44451a409e2f61a5499080a76f9f8634
+
+
+--南平可测试
+http://localhost:9456/GeoAdapter/Map/Map5/44451a409e2f61a5499080a76f9f8634/tile/9/183/847
+
+
+--服务聚合测试 湿地公园+森岭公园
+http://192.168.0.251/GeoAdapter/Map/SDGY_FJS/44451a409e2f61a5499080a76f9f8634?service=WMS&request=GetMap&version=1.3.0&format=image/png&layers=0&styles=&width=256&height=256&bbox=116.2,23.488039,120.896577,28.331455&crs=EPSG:4490&transparent=True&bgcolor=ffffff
+
+
+--WMS聚合测试
+http://localhost:9456/GeoAdapter/Map/SDGY_FJS/44451a409e2f61a5499080a76f9f8634/WMSServer?service=WMS&request=GetMap&version=1.3.0&format=image/png&layers=0&styles=&width=512&height=256&bbox=116.2,23.488039,120.896577,28.331455&crs=4490&transparent=True&bgcolor=ffffff
